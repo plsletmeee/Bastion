@@ -12,12 +12,31 @@ import Settings from "./utils/settings.js";
 dotenv.config();
 
 const bastion = new Client({
-    intents: [
-       3243773],
+intents: [
+        GatewayIntentBits.Guilds,
+        // GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildBans,
+         GatewayIntentBits.GuildEmojisAndStickers,
+         GatewayIntentBits.GuildIntegrations,
+         GatewayIntentBits.GuildWebhooks,
+         GatewayIntentBits.GuildInvites,
+        GatewayIntentBits.GuildVoiceStates,
+       // GatewayIntentBits.GuildPresences,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.GuildMessageReactions,
+         GatewayIntentBits.GuildMessageTyping,
+        GatewayIntentBits.DirectMessages,
+         GatewayIntentBits.DirectMessageReactions,
+         GatewayIntentBits.DirectMessageTyping,
+        // GatewayIntentBits.MessageContent,
+         GatewayIntentBits.GuildScheduledEvents,
+         GatewayIntentBits.AutoModerationConfiguration,
+         GatewayIntentBits.AutoModerationExecution,
+   ],
     partials: [
-        // Partials.Message,
-        // Partials.Channel,
-       // Partials.Reaction,
+         Partials.Message,
+         Partials.Channel,
+        Partials.Reaction,
     ],
     makeCache: Options.cacheWithLimits({
         ...Options.DefaultMakeCacheSettings,
