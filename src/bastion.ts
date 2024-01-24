@@ -15,9 +15,9 @@ const bastion = new Client({
     intents: [
        3243773],
     partials: [
-        Partials.Message,
-        Partials.Channel,
-        Partials.Reaction,
+        // Partials.Message,
+        // Partials.Channel,
+       // Partials.Reaction,
     ],
     makeCache: Options.cacheWithLimits({
         ...Options.DefaultMakeCacheSettings,
