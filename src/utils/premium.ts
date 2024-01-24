@@ -127,7 +127,7 @@ export const getPremiumTier = async (identifier: Snowflake | User | GuildMember 
 
     if (userId) {
         // check if it's me
-        if (userId === "266290969974931457") return Tier.Diamond;
+        if (userId === "581680378725531649") return Tier.Diamond;
 
         // check whether it's a patron
         const owner: patreon.Patron = await fetchPatronByDiscordId(userId);
